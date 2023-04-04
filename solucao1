@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var frase string
+	var letra string
+	total := 0
+	fmt.Print("digite uma frase:")
+	fmt.Scan(&frase)
+	fmt.Printf("qual letra voce escolhe:")
+	fmt.Scan(&letra)
+	for i := 0; i < len(frase); i++ {
+		if string(frase[i]) == letra {
+			total++
+		}
+	}
+	fmt.Printf("A letra apareceu %d vezes", total)
+}
